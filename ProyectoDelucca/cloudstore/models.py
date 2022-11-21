@@ -4,9 +4,9 @@ from django.db import models
 
 class Consola(models.Model):
     
-    nombre_consola= models.CharField(max_length=50)
-    marca_consola= models.CharField(max_length=50)
-    precio_consola= models.IntegerField()
+    nombre_consola= models.CharField(max_length=50, default=None)
+    marca_consola= models.CharField(max_length=50, default=None)
+    precio_consola= models.IntegerField(default=None)
 
 class Juego(models.Model):
 
