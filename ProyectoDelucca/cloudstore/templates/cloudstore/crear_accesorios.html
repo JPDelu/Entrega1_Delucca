@@ -1,0 +1,16 @@
+{% extends "cloudstore/base.html" %}
+
+
+{% block contenido %}
+
+<form action="" method="post">
+    {% csrf_token %}
+
+    {{form_accesorios.as_p}}
+
+    <input type="submit" value="Cargar Accesorio">
+
+</form>
+
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends "cloudstore/base.html" %}
+
+{% block contenido %}
+
+<form action="/cloudstore/crear_juegos/" method="post" > 
+
+    {% csrf_token %}
+
+    <p>
+        Juego <input type="text" name="nombre_juego">
+    </p>
+
+    <p>
+        Genero <input type="text" name="genero_juego">
+    </p>
+
+    <p>
+        Precio $ <input type="number" name="precio_juego">
+    </p>
+
+    <input type="submit" value="Cargar Juego">
+
+
+</form>
+
+{% endblock %}
