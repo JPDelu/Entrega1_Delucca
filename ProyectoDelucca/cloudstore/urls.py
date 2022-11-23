@@ -1,12 +1,14 @@
 from django.urls import path
-from cloudstore import views
+from cloudstore.views import *
 
 urlpatterns = [
-    path('', views.inicio, name="Inicio"),
-    path('consolas', views.consolas, name="Consolas"),
-    path('juegos', views.juegos, name="Juegos"),
-    path('accesorios', views.accesorios, name="Accesorios"),
-    path('crear_juegos/', views.crear_juegos, name="Form_juegos"),
-    path('crear_consolas/', views.creacion_consolas, name="Form_consolas"),
-    path('crear_accesorios/', views.creacion_accesorios, name="Form_accesorios")
+    path('', inicio, name="Inicio"),
+    path('consolas', consolas, name="Consolas"),
+    path('juegos', juegos, name="Juegos"),
+    path('accesorios', accesorios, name="Accesorios"),
+    path('crear_juegos/', crear_juegos, name="Form_juegos"),
+    path('crear_consolas/', creacion_consolas, name="Form_consolas"),
+    path('busqueda_consolas/', buscar_consola, name="Buscador_consolas"),
+    path('busqueda_consolas_resultado/', resultado_busqueda, name="Resultado_busqueda_consolas"),
+    path('crear_accesorios/', creacion_accesorios, name="Form_accesorios")
 ]

@@ -68,6 +68,18 @@ def creacion_accesorios(request):
     contexto = {"form_accesorios": form_accesorios}
     return render(request, "cloudstore/crear_accesorios.html", contexto)
 
+def buscar_consola(request):
+
+    return render (request, "cloudstore/busqueda_consolas.html")
+
+def resultado_busqueda(request):
+
+    nombre_consola = request.GET ["nombre_consola"]
+
+    consolas = Consola.objects.filter(nombre_consola__icontains=nombre_consola)
+
+    return render (request, "cloudstore/resultado_busqueda_consolas.html", {"consolas": consolas})
+
 
 
 

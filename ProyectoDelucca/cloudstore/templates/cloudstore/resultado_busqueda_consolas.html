@@ -1,0 +1,15 @@
+{% extends "cloudstore/base.html" %}
+
+{% block contenido %}
+
+<ul>
+    {% for consola in consolas %}
+
+    <li>
+        {{consola.nombre_consola}} | {{consola.marca_consola}} | $ {{consola.precio_consola}}
+    </li>
+    {% endfor %}
+
+</ul>
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "cloudstore/base.html" %}
+
+{% block contenido %}
+
+<form action="{% url 'Resultado_busqueda_consolas' %}" method="get">
+
+
+    <p>
+        Nombre de consola: <input type="text" name="nombre_consola">
+        <input type="submit" value="Buscar Consola">
+    </p>
+
+</form>
+
+{% endblock %}
