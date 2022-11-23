@@ -1,0 +1,54 @@
+/// Proyecto CloudStore | Videojuegos \\\
+
+Este proyecto consiste en una tienda virtual de videojuegos en la cual se pueden encontrar consolas, juegos y accesorios
+
+De momento, cuenta con 3 modelos/categorias que son:
+
+*Consola
+*Juego
+*Accesorio
+
+Los objetos del modelo Consola se identeifican como:
+
+*nombre_consola
+*marca_consola
+*precio_consola
+
+Los objetos del modelo Juego se identeifican como:
+
+*nombre_juego
+*genero_juego
+*precio_juego
+
+Los objetos del modelo Accesorio se identeifican como:
+
+*nombre_accesorio
+*tipo_accesorio
+
+
+Desde las siguientes URLs se podra acceder a cada modelo desde la web:
+
+* /cloudstore/consolas/
+* /cloudstore/juegos/
+* /cloudstore/accesorios/
+
+Existen URLs para acceder y crear nuevos objetos de cada modelo desde la web:
+
+* /cloudstore/crear_consolas/
+* /cloudstore/crear_juegos/
+* /cloudstore/crear_accesorios/
+
+Por ultimo, se pueden buscar consolas existentes desde la URL para busqueda de consolas:
+
+* /cloudstore/busqueda_consolas
+
+Algunas sugerencias para buscar:
+
+* Switch
+* Xbox
+* Playstation
+
+
+
+"PROYECTO EN DESARROLLO"
+
